@@ -7,6 +7,7 @@
 @import "blocks/header";
 @import "blocks/menu";
 @import "blocks/intro";
+@import "blocks/tovar";
 // =========== BLOCKS ============
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,11 +50,181 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    h3 {
+        font-family: 'Lemon Tuesday';
+        font-size: 60px;
+        color: #32505a;
+        font-weight: 400;
+        margin: 0px 30px;
+    }
+}
 
 
 
+.gallery {
+    &__slider {
+        display: flex;
+        margin: 0px -15px;
+        min-width: 0;
+        &-content {
+            padding: 30px 30px;
+        }
+
+        &-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow:0px 4px 10px 1px rgba(0,0,0,0.16);
+            text-align: center;
+            img {
+                width: 100%;
+                height: 230px;
+                object-fit: cover;
+            }
+        }
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        &-subtitle {
+            font-size: 12px;
+            font-weight: 300;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        &-tovar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        &-price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #000;
+            sup {
+                font-size: 12px;
+            }
+        }
+        &-calc {
+            display: flex;
+            input[type=button] {
+                font-size: 22px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #8d8d8d;
+                border-radius: 50%;
+                line-height: 0;
+                outline: none;
+                cursor: pointer;
+                padding: 0px;
+                padding-bottom: 3px;
+                color: #8d8d8d;
+                background-color: transparent;
+                &:hover {
+                    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fefefe), to(#dfdfdf));
+                }
+            }
+            input[type=text].gallery__slider-text {
+                background: none;
+                border: none;
+                text-align: center;
+                margin: 0;
+                width: 30px;
+                outline: none;
+            }
+        }
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track {
+            display: flex;
+            padding: 15px 0;
+        }
+        .slick-slide {
+            margin: 0px 15px;
+        }
+        .slick-arrow {
+            position: absolute;
+            bottom: -50px;
+            z-index: 10;
+            font-size: 0;
+            width: 30px;
+            height: 20px;
+            background: none;
+            border: none;
+            outline: none;
+
+            cursor: pointer;
+        }   
+
+        .slick-prev {
+            left: 35%;
+            background-image: url(../../img/left.png);
+            background-repeat: no-repeat;
+        }
+
+        .slick-next {
+            right: 35%;
+            
+            background-image: url(../../img/right.png);
+            background-repeat: no-repeat;
+        }
 
 
+
+        .slick-dots {
+
+
+            display: flex;
+            align-items: center;
+            left: 44%;
+            position: absolute;
+            bottom: -45px;
+            li {
+                margin: 0px 10px;
+                padding: 0;
+                list-style: none;
+            }
+            li.slick-active button {
+                background-color: #84c604;
+                border: 1px solid #84c604;
+            }
+            button {
+                padding: 0;
+                border: 1px solid #b3b3b3;
+                background-color: #b3b3b3;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                outline: none;  
+                font-size: 0;
+            }
+        }
+    }
+}
+
+.btn-tovar {
+    background-color: #fd4f10;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+
+
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    i {
+        margin-left: 20px;
+    }
+}
 
 
 
