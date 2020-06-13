@@ -8,6 +8,7 @@
 @import "blocks/menu";
 @import "blocks/intro";
 @import "blocks/tovar";
+@import "blocks/new";
 // =========== BLOCKS ============
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         &-item {
+            background-color: #fff;
             border-radius: 10px;
             overflow: hidden;
             box-shadow:0px 4px 10px 1px rgba(0,0,0,0.16);
