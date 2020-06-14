@@ -1,0 +1,53 @@
+.footer {
+    padding: 50px 0px;
+    background-color: #1a2d34;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        &:first-child {
+            margin-bottom: 40px;
+        }
+    }
+    &__menu {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.5;
+    }
+    &__title {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    &__list {
+        font-size: 12px;
+        color: #6b96a5;
+        line-height: 1.7;
+        padding-right: 30px;
+    }
+    &__item {
+        &-wrapper {
+            display: flex;
+        }
+    }
+    &__copy-text {
+        font-size: 12px;
+        color: #6b96a5;
+        line-height: 1.7;
+        text-decoration: underline;
+    }
+    &__copy-icon {
+        a {
+            font-size: 24px;
+            color: #8d969a;
+            text-decoration: none;
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        i {
+            margin-left: 10px;
+        }
+    }
+}
