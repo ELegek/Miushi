@@ -22,13 +22,67 @@
     }
 
     // ============= MENU__descr =============
+
+    // ============= Intro =============
+    .intro {
+
+        .slick-arrow {
+            display: none;
+        }
+    }
+
+    // ============= Intro =============
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
 
-@media (max-width: 600px) {}
+    // ============= Intro =============
+    .intro {
+        &__slider {
+            &-title {
+                font-size: 80px;
+            }
+        }
+    }
 
-@media (max-width: 480px) {}
+    // ============= Intro =============
+}
+
+@media (max-width: 600px) {
+
+    // ============= Intro =============
+    .intro {
+        &__slider {
+            &-title {
+                font-size: 60px;
+            }
+
+            &-subtitle {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // ============= Intro =============
+}
+
+@media (max-width: 480px) {
+
+    // ============= Intro =============
+    .intro {
+        &__slider {
+            &-title {
+                font-size: 45px;
+            }
+
+            &-subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+
+    // ============= Intro =============
+}
 
 @media (max-width: 320px) {
 
@@ -40,4 +94,19 @@
     }
 
     // ============= MENU__descr =============
+
+    // ============= Intro =============
+    .intro {
+        &__slider {
+            &-title {
+                font-size: 34px;
+            }
+
+            &-subtitle {
+                font-size: 12px;
+            }
+        }
+    }
+
+    // ============= Intro =============
 }
