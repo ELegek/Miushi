@@ -1,26 +1,43 @@
 @media (max-width: 1280px) {}
 
 @media (max-width: 1024px) {
+
     // ============= HEADER =============
     .header {
         display: none;
     }
+
     // ============= HEADER =============
 
     // ============= MENU =============
     .menu {
         display: none;
     }
+
     // ============= MENU =============
+
+    // ============= MENU__descr =============
     .menu__desc {
         display: block;
     }
+
+    // ============= MENU__descr =============
 }
 
-@media (max-width: 768px) {} 
+@media (max-width: 768px) {}
 
 @media (max-width: 600px) {}
 
 @media (max-width: 480px) {}
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+
+    // ============= MENU__descr =============
+    .menu__desc-wrapper {
+        i {
+            margin: 0;
+        }
+    }
+
+    // ============= MENU__descr =============
+}
