@@ -27,7 +27,8 @@
     .intro {
 
         .slick-arrow {
-            display: none;
+            width: 0px;
+            height: 0px;
         }
     }
 
@@ -46,6 +47,15 @@
     }
 
     // ============= Intro =============
+
+    // ============= Tovar =============
+    .tovar {
+        padding-top: 30px;
+    }
+
+    // ============= Tovar =============
+
+
 }
 
 @media (max-width: 600px) {
@@ -60,6 +70,7 @@
             &-subtitle {
                 font-size: 20px;
             }
+
             &-btn {
                 display: none;
             }
@@ -67,6 +78,36 @@
     }
 
     // ============= Intro =============
+
+    // ============= Gallery =============
+
+    .gallery {
+        &__slider {
+            .slick-next {
+                right: 30%;
+            }
+
+            .slick-prev {
+                left: 30%;
+            }
+        }
+    }
+
+    // ============= Gallery =============
+
+
+    // ============= Title =============
+    .title {
+        padding-bottom: 30px;
+
+        h3 {
+            font-size: 50px;
+        }
+    }
+
+    // ============= Title =============
+
+
 }
 
 @media (max-width: 480px) {
@@ -85,6 +126,32 @@
     }
 
     // ============= Intro =============
+
+    // ============= Gallery =============
+
+    .gallery {
+        &__slider {
+            .slick-next {
+                right: 25%;
+            }
+
+            .slick-prev {
+                left: 25%;
+            }
+        }
+    }
+
+    // ============= Gallery =============
+
+    // ============= Title =============
+    .title {
+        h3 {
+            font-size: 40px;
+            margin: 0px 15px;
+        }
+    }
+
+    // ============= Title =============
 }
 
 @media (max-width: 320px) {
@@ -112,4 +179,47 @@
     }
 
     // ============= Intro =============
+
+    // ============= Gallery =============
+
+    .gallery {
+        &__slider {
+            &-content {
+                padding: 15px;
+            }
+            &-title {
+                font-size: 18px;
+            }
+            &-subtitle {
+                font-size: 10px;
+            }
+            &-price {
+                font-size: 14px;
+                sup {
+                    font-size: 10px;
+                }
+            }
+            .slick-next {
+                right: 15%;
+            }
+
+            .slick-prev {
+                left: 15%;
+            }
+        }
+    }
+    .btn-tovar {
+        padding: 10px 20px;
+    }
+    // ============= Gallery =============
+
+    // ============= Title =============
+    .title {
+        h3 {
+            font-size: 24px;
+            margin: 0px 0px;
+        }
+    }
+
+    // ============= Title =============
 }
