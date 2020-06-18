@@ -2,13 +2,22 @@
     padding: 100px 0;
     &__wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        
     }
     &__item {
-       padding: 0px 60px 0px 0px;
+        width: 50%;
+        margin-right: 30px;
+        font-size: 14px;
+        color: #4c4c4c;
+        line-height: 1.3;
+       p {
+           margin-bottom: 20px;
+       }
     }
     &__title {
+        text-align: center;
         font-size: 24px;
         font-weight: 700;
         color: #32505a;
