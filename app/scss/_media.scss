@@ -87,7 +87,19 @@
 
     // ============= About =============
 
+    // ============= Accordeon  =============
+    .footer {
+        padding: 20px 0px;
+    }
+    .footer__wrapper {
+        display: none;
+    }
 
+    .accordeon {
+        display: block;
+    }
+
+    // ============= Accordeon  =============
 }
 
 @media (max-width: 600px) {
@@ -255,6 +267,21 @@
     }
 
     // ============= About =============
+
+    // ============= Footer =============
+    .footer__copy {
+        flex-direction: column-reverse;
+    }
+    .footer__copy-text {
+        text-align: center;
+        width: 100%;
+    }
+    .footer__copy-icon {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    // ============= Footer =============
 }
 
 @media (max-width: 320px) {

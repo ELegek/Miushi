@@ -8,6 +8,12 @@
             margin-bottom: 40px;
         }
     }
+    &__copy {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+    }
     &__menu {
         a {
             font-size: 14px;
