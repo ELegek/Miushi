@@ -48,7 +48,7 @@ $(function () {
 
 
 
-
+// ============ Accordeon ============
     $(function(){
       // hide all content
       $('.accordeon_content').hide();
