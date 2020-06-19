@@ -167,16 +167,24 @@
 
     // ============= Company =============
     .company {
+        padding: 50px 0px;
+        .title {
+            h3 {
+                font-size: 35px;
+            }
+        }
         &__wrapper {
             justify-content: center;
+            flex-wrap: wrap;
         }
         &__item {
             width: 100%;
             padding: 0;
-            img {
-                max-width: 100%;
-                height: auto;
-            }
+            margin: 0;
+            text-align: center;
+        }
+        &__text {
+            display: none;
         }
     }
     // ============= Company =============
@@ -354,4 +362,16 @@
         }
     }
     // ============= Contact =============
+
+    // ============= Company =============
+    .company {
+        .title {
+            img {
+                display: none;
+            }
+        }
+    }
+    // ============= Company =============
+
+    
 }
