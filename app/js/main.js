@@ -1,9 +1,10 @@
 $(function () {
 
-    // ================ MENU BURGER ===================
-    document.querySelector('.menu__burger').onclick = function () {
-        this.classList.toggle('active');
-    };
+
+
+    $('.menu__burger').click(function(event) {
+      $('.menu__burger,.menu__desc-mobile').toggleClass('active');
+    });
 
 
     $('.intro__slider').slick({
@@ -64,6 +65,8 @@ $(function () {
     });
 
 
+
+    
 
 
 });

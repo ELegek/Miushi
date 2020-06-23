@@ -1,25 +1,49 @@
 .menu__desc {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+
     padding: 10px 0px;
 
     display: none;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .logo {
+        z-index: 3;
+    }
     &-body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
     &-wrapper {
+        z-index: 3;
         i {
             color: #1fba0a;
             margin-left: 20px;
+            
         }
     }
 
     .menu__burger {
+        z-index: 3;
         width: 30px;
         height: 5px;
         background-color: #1fba0a;
         position: relative;
         transition: all .2s linear .2s;
+        cursor: pointer;
         &:before,
         &:after {
             position: absolute;
